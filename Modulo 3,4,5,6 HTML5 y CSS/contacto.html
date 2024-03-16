@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head> 
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1> <img src="img/logo.png" alt="Logo de la barbería Alura"> </h1>
+                <nav>
+                    <ul>
+                        <li> <a href="index.html">Home</a> </li>
+                        <li> <a href="productos.html">Productos</a> </li>
+                        <li> <a href="contacto.html">Contacto</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="contacto-main">
+            <form>
+                <label for="NombreyApellido">Nombre y Apellido</label>
+                <input type="text" id="NombreyApellido" class="padron" required>
+                <label for="Correo">Correo Electrónico</label>
+                <input type="email" id="Correo" class="padron" required placeholder="email@dominio.com">
+                <label for="Teléfono">Teléfono</label>
+                <input type="tel" id="Teléfono" class="padron" required placeholder="(XX) XXXX-XXXX">
+                <label for="Mensaje">Mensaje</label>
+                <textarea id="Mensaje" cols="70" rows="10" class="padron"></textarea>
+                <fieldset>
+                    <legend>¿Como le gustaría que le contactemos?</legend>
+                    <label for="radio-email"><input type="radio" value="email" id="radio-email" name="contacto"> Email</label>
+                    
+                    <label for="radio-telefono"><input type="radio" value="teléfono" id="radio-telefono" name="contacto"> Teléfono</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" value="whatsapp" id="radio-whatsapp" name="contacto" checked> WhatsApp</label>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>¿En que horario le gustaría ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                <label class="checkbox"><input type="checkbox" checked > ¿Le gustaría recibir novedades de la barbería Alura? </label>
+                <input type="submit" value="Enviar Formulario" class="Enviar">
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08hs - 20hs</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>08hs - 20hs</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08hs - 20hs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <img src="img/logo-blanco.png" alt="logo de la barbería Alura">
+            <p class="Copyright">&#169; Copyright Barbería Alura - 2020</p>
+        </footer>
+    </body>
+</html>
+
+<!--
+    <input type ="radio"> es un input de tipo de casilla selectora unica (esas casillas que solo se puede elegir 1)
+    <input type ="checklist"> es un input de tipo de casilla de verificación (esas casillas que se marcan con un tick)
+    <input type ="text"> es un input de tipo casilla de texto (una linea de texto donde se puede escribir)
+    <textarea> es un casilla de texto amplia con tamaño regulable por el usuario </textarea>
+    <table> es una tabla </table>
+    <thead> indica cual es el encabezado de la tabla (Table HEAD) </thead>
+    <th> es una etiqueta que indica que el elemento es parte de un encabezado, es decir que no es parte del contenido de la tabla, sino que el resto de los contenidos es parte suya (Table Header) </th>
+    <tbody> indica cual es el cuerpo de la tabla y su contenido (Table BODY) </tbody> 
+    <tr> indica el comienzo y final de un elemento celda en una fila, es decir horizontalmente (Table row)  </tr>
+    <td> indica el comienzo y final de una fila en forma de columna (es decir debajo de los anteriores) </tr>
+
+    -->
